@@ -107,3 +107,5 @@ while True:
         10, 2, 3, uniform=False)
     if compute(rankings, c_count, "random_IC_party_list"):
         break
+    except Exception:
+        pass
