@@ -94,12 +94,10 @@ def get_vote(threshold, ranking):
                     threshold -= 1
             else:
                 curr_voters += "," + voter
-                # count += 1
                 if "}" in voter:
                     count = add_candidate(curr_voters, appr_set)
                     curr_voters = ""
                     threshold -= count  # or -= 1
-                    # count = 0
                 else:
                     continue
         else:
